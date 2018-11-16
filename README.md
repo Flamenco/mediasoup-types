@@ -24,7 +24,21 @@ As a _hack_, you can drop the `mediasoup folder` into your `node_modules/@types`
 and rely on the default `typeRoots`.
 
 Once we get around to publishing on NPM, all you will need to do is install the types package.
+
 # Payload Types
+You can augment the AppData interface with your own types.
+```typescript
+namespace MediaSoup {
+interface AppData {
+    command: string
+    timestamp: number
+    data:{
+        field1: string
+        field2: number
+    }
+  }
+}
+```
 
 # Contributing
 
