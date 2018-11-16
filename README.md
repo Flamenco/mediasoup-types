@@ -1,17 +1,38 @@
 # mediasoup-types
-A staging area for MediaSoup Typescript definitions
+A staging area for MediaSoup Typescript definitions.
 
-This project is a staging area for the creation of MediaSoup types.
+# Overview
+This project is a staging area for the creation of MediaSoup Typescript definitions.
 
-https://mediasoup.org/
+Expect the source files to be heavily refactored as I slurp my way through the MediaSoup API.
 
-Expect the source files to be heavily refactored.
+To learn about MediaSoup, visit https://mediasoup.org.
 
-## Installation
-`TODO` Add installation instructions
+# Installation
+Import the types into your existing Typescript configuration compiler options.
+```json
+{
+  "compilerOptions": {
+    "typeRoots": [     
+      "./node_modules/@types",
+      "<path-to-project>/mediasoup"
+    ]
+  }
+}
+```
+As a _hack_, you can drop the `mediasoup folder` into your `node_modules/@types` directory
+and rely on the default `typeRoots`.
 
-## Payload Types
-`TODO` Add details for augmenting payload types
+Once we get around to publishing on NPM, all you will need to do is install the types package.
+# Payload Types
 
-## Contributing
-`TODO` Add contributor requirements
+# Contributing
+
+# TODO
+- [ ] Publish to NPM
+- [ ] Split into client and server
+- [ ] Add details for augmenting payload types
+- [ ] Add contributor requirements
+- [ ] Package in proper TypeScript/NPM format (install in node_modules/@types)
+- [ ] Mark individual interfaces as completed or partial
+- [ ] Provide examples
