@@ -51,20 +51,20 @@ export declare module mediasoup {
     peer: Peer
   }
 
-  interface Consumer extends BaseType {
+  export interface Consumer extends BaseType {
     peer: Peer | undefined // This is undefined when creating an RtpStreamer
     source: Producer //TODO this may be other types besides Producer
     preferredProfile: any
     effectiveProfile: any
   }
 
-  interface RtpParameters {
+  export interface RtpParameters {
     headerExtensions: any[];
     muxId: string
     codecs: Codec[]
   }
 
-  interface Codec {
+  export interface Codec {
     rtcpFeedback: any[];
     payloadType: any;
     parameters: any[];
@@ -72,7 +72,7 @@ export declare module mediasoup {
     clockRate: number;
   }
 
-  interface PlainRtpTransport {
+  export interface PlainRtpTransport {
     tuple: {
       localIP: string
       localPort: number
