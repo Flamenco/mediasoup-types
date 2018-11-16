@@ -1,0 +1,25 @@
+{
+  "name": "mediasoup-types",
+  "version": "1.0.0-alpha",
+  "description": "Typescript bindings for MediaSoup",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Flamenco/mediasoup-types.git"
+  },
+  "keywords": [
+    "mediasoup",
+    "rtp",
+    "rtps",
+    "typescript"
+  ],
+  "author": "TwelveTone LLC",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Flamenco/mediasoup-types/issues"
+  },
+  "homepage": "https://github.com/Flamenco/mediasoup-types#readme"
+}
