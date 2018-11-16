@@ -103,4 +103,8 @@ export declare module mediasoup {
     rtp: RtpCodec[];
     payloads: string | undefined;
   }
+  
+  export interface AppData {
+    // Custom AppData to be augmented by application
+  }
 }
